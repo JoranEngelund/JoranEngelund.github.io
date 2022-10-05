@@ -117,6 +117,10 @@ span {
   flex-wrap: wrap;
 }
 
+.project-card h4 {
+  text-align: center;
+}
+
 .image-container {
   margin: 0;
   display: flex;
@@ -134,19 +138,19 @@ span {
 }
 
 .link-container {
-  text-align: right;
+  text-align: center;
   margin-top: auto;
-  margin-right: 13px;
 }
 
 .link-container a {
-  font-size: 2em;
+  font-size: 3em;
   color: black;
   padding: 6px;
 }
 
 .skills-container {
   text-align: center;
+  margin-top: auto;
 }
 .desktop-image {
   width: 100%;
