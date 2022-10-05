@@ -45,7 +45,6 @@ nav {
 }
 
 ul {
-  font-size: 1.5em;
   display: flex;
   gap: 20px;
   list-style: none;
