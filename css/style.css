@@ -154,6 +154,11 @@ span {
   text-align: center;
   margin-top: auto;
 }
+
+.skills-container img {
+  width: 5%;
+}
+
 .desktop-image {
   width: 70%;
 }
