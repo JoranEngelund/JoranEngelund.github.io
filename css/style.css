@@ -1,24 +1,43 @@
 :root {
-  --header-color: rgba(0, 51, 102, 1);
-  --main-color: white;
-  --background-color: #d3bbbb;
+  --main-color: rgba(0, 51, 102, 1);
+  --copy-color: white;
+  --secondary-color: rgba(128, 0, 32, 1);
+  --tertiary-color: rgba(173, 216, 230, 1);
   --cta-color: var(--header-color);
+  --header-font: "griffon", serif;
+  --body-font: "roboto", sans-serif;
 }
 
 header {
-  background-color: var(--header-color);
+  background-color: var(--main-color);
   display: flex;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   top: 0;
+  width: 100%;
   left: 0;
   font-family: "Open Sans Bold";
-  color: var(--main-color);
+  color: var(--copy-color);
 }
 
 body {
   margin: 0;
-  max-width: 100vw;
+  width: 100vw;
+  display: flex;
+  max-width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  font-family: var(--body-font);
+}
+
+footer {
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  gap: 17px;
+  margin-top: auto;
+  padding: 20px;
 }
 
 ul {
@@ -31,7 +50,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: var(--main-color);
+  color: var(--copy-color);
 }
 
 h1 {
@@ -44,47 +63,95 @@ h3 {
   width: 100%;
 }
 
+h1,
+h2,
+h3,
+li {
+  font-family: var(--header-font);
+}
+
+span {
+  font-weight: bold;
+}
+
 .home {
-  background-color: var(--background-color);
+  background-color: var(--secondary-color);
+  color: var(--copy-color);
   width: 100%;
-  height: 13rem;
+  height: 46rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: left;
 }
 
+.home h2 {
+  margin: 39px auto;
+}
+
 .preview-copy {
   max-width: 1000px;
-  margin: auto 18%;
+  margin: 0 30%;
+  text-align: left;
   font-size: 1.5em;
 }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
   justify-content: center;
   margin: auto;
+  background-color: var(--tertiary-color);
 }
 
 .project-card {
-  background-color: var(--background-color);
-  margin: 2% auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--tertiary-color);
+  margin: 30px auto;
   box-shadow: 0px 3px 10px black;
   border-radius: 5px;
   box-sizing: border-box;
-  width: calc(34% - 10px);
+  width: calc(34% - 48px);
+  flex-wrap: wrap;
 }
 
 .image-container {
-  margin: 1.5% auto;
+  margin: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
+.info-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.info-container p {
+  margin: auto 20px;
+}
+
+.link-container {
+  text-align: right;
+  margin-top: auto;
+  margin-right: 13px;
+}
+
+.link-container a {
+  font-size: 2em;
+  color: black;
+  padding: 6px;
+}
+
+.skills-container {
+  text-align: center;
+}
 .desktop-image {
-  width: 73%;
+  width: 100%;
 }
 
-.responsive-image {
-  width: 24%;
+span {
+  align-self: center;
 }

@@ -4,9 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Private portfolio page for Jøran Engelund. This is me, my skills and my projects as I progress on the journey as a front-end developer. You can see my projects, my coding-language skills and read about me as a person. It's absolutely possible to get in touch with me. Either through social medias, email or the contact form" />
+    <meta
+      name="description"
+      content="Private portfolio page for Jøran Engelund. This is me, my skills and my projects as I progress on the journey as a front-end developer. You can see my projects, my coding-language skills and read about me as a person. It's absolutely possible to get in touch with me. Either through social medias, email or the contact form"
+    />
     <link href="css/style.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/40442c7b29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/wyu2hlv.css" />
+    <script
+      src="https://kit.fontawesome.com/40442c7b29.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Jøran Engelund</title>
   </head>
   <body>
@@ -14,60 +21,229 @@
       <a href="/index.html"><h1>Jøran Engelund</h1></a>
       <nav>
         <ul>
-          <a href="home"><li>Home</li></a>
-          <a href="projects"><li>Projects</li></a>
-          <a href="skills"><li>Skills</li></a>
-          <a href="about"><li>About</li></a>
-          <a href="contact"><li>Contact</li></a>
+          <a href="#home"><li>Home</li></a>
+          <a href="#projects"><li>Projects</li></a>
+          <a href="#skills"><li>Skills</li></a>
+          <a href="#about"><li>About</li></a>
+          <a href="#contact"><li>Contact</li></a>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="home">
-          <p class="preview-copy">
-            This is me, Jøran Engelund, my skills and my projects as I progress on the journey as a front-end developer. You can explore my projects, my coding-language skills and read about me as a person. It's absolutely possible to get in touch with me. Either through social medias, email or the contact form
-          </p>
+      <section class="home" id="home">
+        <h2>This is me, Jøran Engelund</h2>
+        <p class="preview-copy">
+          Explore my portfolio as I progress on the journey as a
+          <span>front-end developer</span>. You can explore my
+          <span><a href="#projects">projects</a></span
+          >, my coding-language <span><a href="#skills">skills</a></span> and
+          read <span><a href="#about">about me</a></span> as a person. It's
+          absolutely possible to
+          <span><a href="#contact">get in touch</a></span> with me. Either
+          through social media, email or the contact form
+        </p>
       </section>
-      <section class="projects">
+      <section class="projects" id="projects">
         <h2>Projects</h2>
         <div class="project-card">
           <div class="image-container">
-            <img class="desktop-image" src="/assets/images/life_bloggers.jpg" alt="Screenshot of the project Life, showcasing how the website looks in desktop version" />
-            <img class="responsive-image" src="/assets/images/life_blogger_responsive.jpg" alt="Screenshot of the project Life, showcasing how the website looks in responsive version" />
+            <img
+              class="desktop-image"
+              src="/assets/images/life_bloggers.jpg"
+              alt="Screenshot of the project Life, showcasing how the website looks in desktop version"
+            />
           </div>
-          <h3>Life</h3>
-          <p>About Life</p>
-          <a href="#"><i class="fa fa-github"></i></a>
-          <a href="#">Link to website</a>
+          <div class="info-container">
+            <h3>Life</h3>
+            <p>
+              A blogging platform to share daily life experiences. Built during
+              Project Exam 1 - 1st year at Noroff
+            </p>
+          </div>
+          <div class="skills-container">
+            <h4>Made with:</h4>
+            <img
+              src="/assets/images/html5.png"
+              alt="logo for HTML5"
+              title="logo for HTML5"
+            />
+            <img
+              src="/assets/images/css3.png"
+              alt="logo for CSS3"
+              title="logo for CSS3"
+            />
+            <img
+              src="/assets/images/js.png"
+              alt="logo for javaScript"
+              title="logo for javascript"
+            />
+            <img
+              src="/assets/images/api.png"
+              alt="logo for REST API"
+              title="logo for REST API"
+            />
+            <img
+              src="/assets/images/wordpress.png"
+              alt="logo for Wordpress"
+              title="logo for wordpress"
+            />
+            <img
+              src="/assets/images/icons8-w3c-50.png"
+              alt="logo for W3C"
+              title="logo for W3C"
+            />
+            <img
+              src="assets/images/vsc.png"
+              alt="logo for Visual Studio Code"
+              title="logo for Visual Studio Code"
+            />
+            <img
+              src="/assets/images/adobe-xd.png"
+              alt="logo for Adobe xd"
+              title="logo for Adobe XD"
+            />
+            <img
+              src="/assets/images/icons8-adobe-illustrator-48.png"
+              alt="logo for Adobe Illustrator"
+              title="Logo for Adobe Illustrator"
+            />
+          </div>
+          <div class="link-container">
+            <a href="#" title="Link to GitHub"><i class="fa fa-github"></i></a>
+            <a href="#" title="Link to Website"><i class="fa fa-globe"></i></a>
+          </div>
         </div>
         <div class="project-card">
           <div class="image-container">
-            <img class="desktop-image" src="/assets/images/community_science_museum.jpg" alt="Screenshot of the project Community Science Museum, showcasing how the website looks in desktop version" />
-            <img class="responsive-image" src="/assets/images/community_science_museum_responsive.jpg" alt="Screenshot of the project Community Science Museum, showcasing how the website looks in responsive version" />
+            <img
+              class="desktop-image"
+              src="/assets/images/community_science_museum.jpg"
+              alt="Screenshot of the project Community Science Museum, showcasing how the website looks in desktop version"
+            />
           </div>
-          <h3>Community Science Museum</h3>
-          <p>About Community Science Museum</p>
-          <a href="#"><i class="fa fa-github"></i></a>
-          <a href="#">Link to website</a>
+          <div class="info-container">
+            <h3>Community Science Museum</h3>
+            <p>
+              A website for a Community Science Museum - Built during Semester
+              Project 1 - 1st year at Noroff
+            </p>
+          </div>
+          <div class="skills-container">
+            <h4>Made with:</h4>
+            <img
+              src="/assets/images/html5.png"
+              alt="logo for HTML5"
+              title="logo for HTML5"
+            />
+            <img
+              src="/assets/images/css3.png"
+              alt="logo for CSS3"
+              title="logo for CSS3"
+            />
+            <img
+              src="/assets/images/icons8-w3c-50.png"
+              alt="logo for W3C"
+              title="logo for W3C"
+            />
+            <img
+              src="assets/images/vsc.png"
+              alt="logo for Visual Studio Code"
+              title="logo for Visual Studio Code"
+            />
+            <img
+              src="/assets/images/adobe-xd.png"
+              alt="logo for Adobe xd"
+              title="logo for Adobe XD"
+            />
+            <img
+              src="/assets/images/icons8-adobe-illustrator-48.png"
+              alt="logo for Adobe Illustrator"
+              title="Logo for Adobe Illustrator"
+            />
+          </div>
+          <div class="link-container">
+            <a href="#" title="Link to GitHub"><i class="fa fa-github"></i></a>
+            <a href="#" title="Link to Website"><i class="fa fa-globe"></i></a>
+          </div>
         </div>
         <div class="project-card">
           <div class="image-container">
-            <img class="desktop-image" src="/assets/images/square_eyes.jpg" alt="Screenshot of the project Square Eyes, showcasing how the website looks in desktop version" />
-            <img class="responsive-image" src="/assets/images/square_eyes_responsive.jpg" alt="Screenshot of the project Square Eyes, showcasing how the website looks in desktop version" />
+            <img
+              class="desktop-image"
+              src="/assets/images/square_eyes.jpg"
+              alt="Screenshot of the project Square Eyes, showcasing how the website looks in desktop version"
+            />
           </div>
-          <h3>Square Eyes</h3>
-          <p>About Square Eyes</p>
-          <a href="#"><i class="fa fa-github"></i></a>
-          <a href="#">Link to website</a>
+          <div class="info-container">
+            <h3>Square Eyes</h3>
+            <p>
+              A video streaming website for independent filmmakers - Built as a
+              cross-course-project through 1st year at Noroff
+            </p>
+          </div>
+          <div class="skills-container">
+            <h4>Made with:</h4>
+            <img
+              src="/assets/images/html5.png"
+              alt="logo for HTML5"
+              title="logo for HTML5"
+            />
+            <img
+              src="/assets/images/css3.png"
+              alt="logo for CSS3"
+              title="logo for CSS3"
+            />
+            <img
+              src="/assets/images/js.png"
+              alt="logo for javaScript"
+              title="logo for javascript"
+            />
+            <img
+              src="/assets/images/api.png"
+              alt="logo for REST API"
+              title="logo for REST API"
+            />
+            <img
+              src="/assets/images/icons8-w3c-50.png"
+              alt="logo for W3C"
+              title="logo for W3C"
+            />
+            <img
+              src="assets/images/vsc.png"
+              alt="logo for Visual Studio Code"
+              title="logo for Visual Studio Code"
+            />
+            <img
+              src="/assets/images/adobe-xd.png"
+              alt="logo for Adobe xd"
+              title="logo for Adobe XD"
+            />
+            <img
+              src="/assets/images/icons8-adobe-illustrator-48.png"
+              alt="logo for Adobe Illustrator"
+              title="Logo for Adobe Illustrator"
+            />
+          </div>
+          <div class="link-container">
+            <a href="#" title="Link to GitHub"><i class="fa fa-github"></i></a>
+            <a href="#" title="Link to Website"><i class="fa fa-globe"></i></a>
+          </div>
         </div>
       </section>
-      <section class="skills"></section>
-      <section class="about"></section>
-      <section class="contact"></section>
+      <section class="skills" id="skills"></section>
+      <section class="about" id="about"></section>
+      <section class="contact" id="contact"></section>
     </main>
-    <footer><a class="footer-copy" href="#"
+    <footer>
+      <a class="footer-copy" href="#"
         >All rights reserved 2022 &copy; JayDesign</a
       >
-    </footer></footer>
+      <a href="https://www.instagram.com/joranengelund/"
+        ><i class="fa fa-instagram"></i
+      ></a>
+      <a href="https://www.facebook.com/joranengelund"
+        ><i class="fa fa-facebook"></i
+      ></a>
+    </footer>
   </body>
 </html>
