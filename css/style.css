@@ -122,6 +122,7 @@ button {
   background-color: var(--tertiary-color);
   color: black;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .carousel {
