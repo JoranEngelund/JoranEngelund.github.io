@@ -117,6 +117,13 @@ span {
   gap: 13rem;
 }
 
+button {
+  border: none;
+  background-color: var(--tertiary-color);
+  color: black;
+  font-size: 2rem;
+}
+
 .carousel {
   max-width: 1124px;
   width: 100%;
