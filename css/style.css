@@ -120,6 +120,7 @@ span {
 .content-container {
   overflow: auto;
   scroll-behavior: smooth;
+  height: 31rem;
 }
 
 .carousel-posts {
