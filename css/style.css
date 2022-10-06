@@ -217,6 +217,10 @@ span {
   align-self: center;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 1156px) {
   .content-container {
     margin: auto 16px auto 16px;
