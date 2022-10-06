@@ -193,3 +193,9 @@ span {
     margin: auto 16px auto 16px;
   }
 }
+
+@media only screen and (max-width: 396px) {
+  .project-card {
+    width: 264px;
+  }
+}
