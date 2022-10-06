@@ -102,20 +102,41 @@ span {
 
 .projects {
   display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1;
+  height: 46rem;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin: auto;
   background-color: var(--tertiary-color);
+}
+
+.carousel {
+  max-width: 1124px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.content-container {
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.carousel-posts {
+  display: grid;
+  grid-auto-flow: column;
+  box-sizing: border-box;
+  margin: auto;
+  gap: 16px;
 }
 
 .project-card {
   display: flex;
   flex-direction: column;
   background-color: var(--tertiary-color);
-  margin: 30px;
-  border-radius: 5px;
   box-sizing: border-box;
+  width: 360px;
+  height: 480px;
 }
 
 .project-card h4 {
@@ -159,9 +180,15 @@ span {
 }
 
 .desktop-image {
-  width: 70%;
+  width: 100%;
 }
 
 span {
   align-self: center;
+}
+
+@media only screen and (max-width: 1156px) {
+  .content-container {
+    margin: auto 16px auto 16px;
+  }
 }
