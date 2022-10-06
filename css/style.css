@@ -8,6 +8,14 @@
   --body-font: "roboto", sans-serif;
 }
 
+/*Credit for scroll-behavior: 
+https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior 
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   background-color: var(--main-color);
   display: flex;
