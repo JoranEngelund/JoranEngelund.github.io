@@ -110,6 +110,13 @@ span {
   background-color: var(--tertiary-color);
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  gap: 13rem;
+}
+
 .carousel {
   max-width: 1124px;
   width: 100%;
