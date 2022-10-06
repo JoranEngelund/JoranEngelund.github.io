@@ -137,7 +137,6 @@ span {
   background-color: var(--tertiary-color);
   box-sizing: border-box;
   width: 360px;
-  height: 480px;
 }
 
 .project-card h4 {
