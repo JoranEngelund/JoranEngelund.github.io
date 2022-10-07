@@ -134,6 +134,10 @@ span {
   gap: 13rem;
 }
 
+.active-menu {
+  display: flex;
+}
+
 button {
   border: none;
   background-color: var(--tertiary-color);
@@ -277,7 +281,11 @@ span {
 
 @media only screen and (max-width: 529px) {
   ul {
-    top: 6.5rem;
+    top: 6.52rem;
+  }
+
+  footer {
+    font-size: 1em;
   }
 }
 
