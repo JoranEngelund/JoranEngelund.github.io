@@ -16,6 +16,10 @@ function checkScreenSize() {
   }
 }
 
+/* 
+Creds: https://developer.mozilla.org/en-US/docs/Web/API/Window/resize_event 
+*/
+
 window.addEventListener("resize", checkScreenSize);
 
 function nextSlide() {
@@ -34,7 +38,9 @@ prevBtn.addEventListener("click", prevSlide);
 const hamburgerBtn = document.querySelector(".hamburger-button");
 const navigation = document.querySelector("ul");
 
-/* Creds: https://dev.to/js_bits_bill/element-classlist-toggle-js-bits-1c6i */
+/*
+Creds: https://dev.to/js_bits_bill/element-classlist-toggle-js-bits-1c6i
+*/
 
 hamburgerBtn.addEventListener("click", function () {
   navigation.classList.toggle("active-menu");
