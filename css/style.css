@@ -26,6 +26,7 @@ header {
   left: 0;
   font-family: "Open Sans Bold";
   color: var(--copy-color);
+  border-bottom: 1px solid var(--tertiary-color);
 }
 
 body {
