@@ -60,6 +60,14 @@ ul {
   margin-right: 1em;
 }
 
+.hamburger-container {
+  display: none;
+}
+
+.hamburger {
+  font-size: 1.5em;
+}
+
 a {
   text-decoration: none;
   color: var(--copy-color);
@@ -120,7 +128,7 @@ span {
 }
 
 .button-container {
-  display: flex;
+  display: none;
   justify-content: center;
   margin-bottom: 1.5rem;
   gap: 13rem;
@@ -163,9 +171,13 @@ button {
   width: 360px;
 }
 
+.projects h2,
+.project-card h4 {
+  margin-bottom: auto;
+}
+
 .project-card h4 {
   text-align: center;
-  margin-bottom: auto;
 }
 
 .image-container {
@@ -196,7 +208,7 @@ button {
 }
 
 .link-container a {
-  font-size: 3em;
+  font-size: 2.5em;
   color: black;
   padding: 6px;
 }
@@ -225,6 +237,42 @@ span {
 @media only screen and (max-width: 1156px) {
   .content-container {
     margin: auto 16px auto 16px;
+  }
+
+  .button-container {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 865px) {
+  .hamburger-container {
+    display: block;
+  }
+
+  nav {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    height: 5rem;
+    text-align: center;
+  }
+
+  ul {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    right: -1rem;
+    top: 4.1rem;
+    text-align: left;
+    padding: 30px;
+    background-color: var(--main-color);
+  }
+}
+
+@media only screen and (max-width: 529px) {
+  ul {
+    top: 6.5rem;
   }
 }
 

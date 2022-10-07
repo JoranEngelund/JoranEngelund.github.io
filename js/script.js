@@ -26,3 +26,25 @@ function prevSlide() {
 
 nextBtn.addEventListener("click", nextSlide);
 prevBtn.addEventListener("click", prevSlide);
+
+const hamburgerBtn = document.querySelector(".hamburger-button");
+const navigation = document.querySelector("ul");
+
+function checkNavigation() {
+  const screenWidth = window.innerWidth;
+  if (screenWidth <= 864) {
+    navigation.style.display = "none";
+  } else {
+    navigation.style.display = "flex";
+  }
+}
+
+window.addEventListener("resize", checkNavigation);
+
+hamburgerBtn.addEventListener("click", (e) => {
+  if (navigation.style.display === "none") {
+    navigation.style.display = "flex";
+  } else {
+    navigation.style.display = "none";
+  }
+});
