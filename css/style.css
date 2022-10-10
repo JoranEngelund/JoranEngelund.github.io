@@ -122,6 +122,10 @@ span {
   font-size: 1.5em;
 }
 
+.preview-copy a {
+  text-decoration: underline;
+}
+
 .projects {
   display: flex;
   height: 46rem;
@@ -263,7 +267,6 @@ button {
 
 span {
   align-self: center;
-  text-decoration: underline;
 }
 
 .active {
