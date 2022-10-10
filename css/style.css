@@ -249,8 +249,12 @@ button {
   margin: 10px;
 }
 
-.skills-container img {
+.skills-card img {
   width: 50%;
+}
+
+.skills-card img:hover {
+  transform: scale(1.1);
 }
 
 .desktop-image {
