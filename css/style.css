@@ -3,6 +3,7 @@
   --copy-color: white;
   --secondary-color: rgba(128, 0, 32, 1);
   --tertiary-color: rgba(173, 216, 230, 1);
+  --quaternary-color: rgba(11, 11, 49, 1);
   --cta-color: var(--header-color);
   --header-font: "griffon", serif;
   --body-font: "roboto", sans-serif;
@@ -180,6 +181,10 @@ button {
 }
 
 .projects h2,
+.skills h2 {
+  margin-bottom: 2rem;
+}
+
 .project-card h4 {
   margin-bottom: auto;
 }
@@ -221,13 +226,31 @@ button {
   padding: 6px;
 }
 
-.skills-container {
+.skills {
+  background-color: var(--quaternary-color);
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin-top: auto;
+  color: white;
+  margin: auto;
+  height: 46rem;
+  justify-content: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem auto;
+  justify-content: center;
+}
+
+.skills-card {
+  width: calc(16% - 10px);
+  margin: 10px;
 }
 
 .skills-container img {
-  width: 6%;
+  width: 50%;
 }
 
 .desktop-image {
@@ -236,6 +259,7 @@ button {
 
 span {
   align-self: center;
+  text-decoration: underline;
 }
 
 .active {
@@ -291,10 +315,19 @@ span {
   footer {
     font-size: 1.2em;
   }
+
+  .skills-card {
+    width: calc(23% - 10px);
+  }
 }
 
 @media only screen and (max-width: 396px) {
   .project-card {
     width: 264px;
+  }
+
+  .preview-copy {
+    font-size: 1.2em;
+    margin: 0 1rem;
   }
 }
