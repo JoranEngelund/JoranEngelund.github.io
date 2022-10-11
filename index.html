@@ -23,7 +23,7 @@
   </head>
   <body>
     <header>
-      <a href="#home"><h1>Jøran Engelund</h1></a>
+      <h1>Jøran Engelund</h1>
       <nav>
         <div class="hamburger-container">
           <div class="hamburger-button">
@@ -31,7 +31,7 @@
           </div>
         </div>
         <ul>
-          <li><a class="active" href="#home">Home</a></li>
+          <li class="active"><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#about">About</a></li>
@@ -50,7 +50,7 @@
               target="_blank"
               >front-end developer</a
             ></span
-          >. You can explore my <span><a href="#projects">projects</a></span
+          >. You can view my <span><a href="#projects">projects</a></span
           >, my coding-language <span><a href="#skills">skills</a></span> and
           read <span><a href="#about">about me</a></span> as a person. It's
           absolutely possible to
@@ -267,7 +267,7 @@
                 alt="Logo of Adobe XD"
                 title="Adobe XD"
             /></a>
-            <p>Adobe XD</p>
+            <p>Adobe Xd</p>
           </div>
           <div class="skills-card">
             <a
@@ -282,8 +282,98 @@
           </div>
         </div>
       </section>
-      <section class="about" id="about"></section>
-      <section class="contact" id="contact"></section>
+      <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>
+          I live and eat in Oslo, Norway. I am currently at full-time studies as
+          a front-end developer at Noroff Vocational School of Technology and
+          Digital Media. I started this studies because in the latter years I
+          have found coding to be a passion. In my youth, I created what we
+          called "home-pages" aka blogs, where you can create your own
+          media-website through a CMS with a strict set of tools.
+        </p>
+        <p>
+          I find front-end as giving, creative and exciting as I can see ideas,
+          solutions and designs unfold and be created before my eyes, like a
+          digital carpenter. I find solving problems and discussing various
+          solutions as a mind game and it is mildly said, a thrill. In my
+          free-time, I'm usually driving on my
+          <a href="https://www.instagram.com/jaywithsway/" target="_blank"
+            >motorcycle</a
+          >
+          either if it's the country roads or a track.
+        </p>
+      </section>
+      <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <div class="validation-message"></div>
+        <form action="mail.php" method="POST" class="contact-form">
+          <div class="input-container">
+            <div>
+              <label for="full-name">Full Name *</label>
+            </div>
+            <input
+              class="form-input"
+              type="text"
+              name="full-name"
+              id="full-name"
+              placeholder="Full Name"
+            />
+            <div class="error-message name-error">
+              Must contain minimum 5 characters
+            </div>
+          </div>
+          <div class="input-container">
+            <div>
+              <label for="subject">Subject *</label>
+            </div>
+            <input
+              class="form-input"
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+            />
+            <div class="error-message subject-error">
+              Must containt minimum 10 characters
+            </div>
+          </div>
+          <div class="input-container">
+            <div>
+              <label for="email">Email *</label>
+            </div>
+            <input
+              class="form-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email@Address.com"
+            />
+            <div class="error-message email-error">
+              Please provide a valid email
+            </div>
+          </div>
+          <div class="input-container">
+            <div>
+              <label for="message">Message *</label>
+            </div>
+            <textarea
+              class="form-input"
+              name="message"
+              id="message"
+              placeholder="Write me a message.."
+              rows="5"
+              cols="30"
+            ></textarea>
+            <div class="error-message message-error">
+              Must contain minimum 15 characters
+            </div>
+          </div>
+          <div class="submit-container">
+            <button class="submit-cta" type="submit">Send</button>
+          </div>
+        </form>
+      </section>
     </main>
     <footer>
       <a class="footer-copy" href="#"
@@ -318,4 +408,5 @@
     </footer>
   </body>
   <script src="/js/script.js"></script>
+  <script src="/js/contact.js"></script>
 </html>

@@ -4,7 +4,8 @@
   --secondary-color: rgba(128, 0, 32, 1);
   --tertiary-color: rgba(173, 216, 230, 1);
   --quaternary-color: rgba(11, 11, 49, 1);
-  --cta-color: var(--header-color);
+  --quinary-color: rgba(196, 164, 132, 1);
+  --senary-color: rgba(8, 143, 143, 1);
   --header-font: "griffon", serif;
   --body-font: "roboto", sans-serif;
 }
@@ -264,6 +265,91 @@ button {
   width: 100%;
 }
 
+.about {
+  height: 46rem;
+  background-color: var(--quinary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about h2,
+.contact h2 {
+  margin: 0;
+}
+
+.about p {
+  max-width: 1000px;
+  font-size: 1.2em;
+  text-align: left;
+  margin: 2rem 2rem;
+}
+
+.about p a {
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.about p,
+.contact-form {
+  margin: 2rem 2rem;
+}
+
+.contact-form,
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  background-color: var(--senary-color);
+  height: 46rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-input {
+  border: none;
+  padding: 7px;
+  width: 16rem;
+  font-family: var(--body-font);
+}
+
+.input-container {
+  margin: 0.5rem;
+}
+
+.submit-container {
+  text-align: center;
+  margin: 1rem;
+}
+
+.submit-cta {
+  padding: 6px 45px;
+  font-size: 1.2em;
+  box-shadow: 0 3px 6px black;
+}
+
+.submit-cta:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.submit-cta:disabled {
+  opacity: 50%;
+  background-color: var(--tertiary-color);
+  color: black;
+}
+
+.error-message {
+  text-align: end;
+  font-size: 0.9em;
+}
+
 span {
   align-self: center;
 }
@@ -324,6 +410,11 @@ span {
 
   .skills-card {
     width: calc(23% - 10px);
+  }
+
+  .about p {
+    font-size: 1em;
+    margin: 2rem 0.5rem;
   }
 }
 
