@@ -66,7 +66,6 @@ window.onscroll = () => {
     const sectionTop = section.offsetTop;
     if (scrollY >= sectionTop - 60) {
       closest = section.getAttribute("id");
-      console.log(closest);
     }
   });
 
