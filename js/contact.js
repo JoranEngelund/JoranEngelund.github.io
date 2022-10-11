@@ -40,7 +40,7 @@ const formValidation = () => {
     subjectError.innerHTML = "";
   } else {
     validForm = false;
-    subjectError.innerHTML = "Must containt minimum 10 characters";
+    subjectError.innerHTML = "Must contain minimum 10 characters";
   }
   if (emailValidator(email.value) === true) {
     validForm = true;
