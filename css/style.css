@@ -411,7 +411,6 @@ button {
 
   ul {
     display: none;
-    border-top: 1px solid var(--tertiary-color);
     position: fixed;
     right: -1rem;
     top: 4.1rem;
