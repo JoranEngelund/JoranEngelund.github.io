@@ -14,41 +14,198 @@
 https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior 
 */
 
-html {
+html,
+.content-container {
   scroll-behavior: smooth;
 }
 
-header {
-  background-color: var(--main-color);
+header,
+body,
+footer,
+ul,
+.home,
+.projects,
+.active-menu,
+.project-card,
+.image-container,
+.info-container,
+.skills,
+.skills-container,
+.about,
+.contact-form,
+.contact {
   display: flex;
+}
+
+body,
+.home,
+.projects,
+.project-card,
+.info-container,
+.skills,
+.about,
+.contact-form,
+.contact {
+  flex-direction: column;
+}
+
+footer,
+.home,
+.projects,
+.button-container,
+.image-container,
+.skills,
+.skills-container,
+.about,
+.contact {
+  justify-content: center;
+}
+
+nav,
+.preview-copy,
+span {
+  align-self: center;
+}
+
+.projects,
+.about,
+.contact {
+  align-items: center;
+}
+
+header,
+footer,
+.submit-cta:hover {
+  background-color: var(--main-color);
+}
+
+.projects,
+button,
+.project-card,
+.submit-cta:disabled {
+  background-color: var(--tertiary-color);
+}
+
+body,
+.form-input {
+  font-family: var(--body-font);
+}
+
+.home,
+.preview-copy,
+.about p {
+  text-align: left;
+}
+
+h2,
+h3,
+.carousel,
+.project-card h4,
+.info-container,
+.link-container,
+.skills,
+.contact p,
+.submit-container {
+  text-align: center;
+}
+
+.preview-copy a,
+.about p a,
+.contact a,
+.active {
+  text-decoration: underline;
+}
+
+button,
+.form-input {
+  border: none;
+}
+
+header,
+a,
+.home,
+.link-container i:hover,
+.skills,
+.submit-cta:hover {
+  color: var(--copy-color);
+}
+
+button,
+.link-container a,
+.about p a,
+.contact a,
+.submit-cta:disabled {
+  color: black;
+}
+
+footer,
+.hamburger,
+.preview-copy {
+  font-size: 1.5em;
+}
+
+.about p,
+.submit-cta {
+  font-size: 1.2em;
+}
+
+.home,
+.projects,
+.skills,
+.about,
+.contact {
+  height: 46rem;
+}
+
+header,
+h2,
+h3,
+.home,
+.carousel,
+.desktop-image {
+  width: 100%;
+}
+
+.about p,
+.preview-copy {
+  max-width: 1000px;
+}
+
+.projects,
+.carousel-posts,
+.skills {
+  margin: auto;
+}
+
+footer,
+.link-container {
+  margin-top: auto;
+}
+
+body,
+.image-container,
+.about h2,
+.contact h2 {
+  margin: 0;
+}
+
+header {
   justify-content: space-between;
   position: fixed;
   top: 0;
-  width: 100%;
   left: 0;
   z-index: 2;
-  font-family: "Open Sans Bold";
-  color: var(--copy-color);
   border-bottom: 1px solid var(--tertiary-color);
 }
 
 body {
-  margin: 0;
   width: 100vw;
-  display: flex;
   max-width: 100%;
   height: 100vh;
-  flex-direction: column;
-  font-family: var(--body-font);
 }
 
 footer {
-  background-color: var(--main-color);
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
   gap: 17px;
-  margin-top: auto;
   padding: 20px;
 }
 
@@ -56,38 +213,23 @@ footer {
   transform: scale(1.2);
 }
 
-nav {
-  align-self: center;
-}
-
 ul {
-  display: flex;
   gap: 20px;
   list-style: none;
   margin-right: 1em;
 }
 
-.hamburger-container {
+.hamburger-container,
+.button-container {
   display: none;
-}
-
-.hamburger {
-  font-size: 1.5em;
 }
 
 a {
   text-decoration: none;
-  color: var(--copy-color);
 }
 
 h1 {
   margin-left: 1em;
-}
-
-h2,
-h3 {
-  text-align: center;
-  width: 100%;
 }
 
 h1,
@@ -97,19 +239,14 @@ li {
   font-family: var(--header-font);
 }
 
-span {
+span,
+.about p a,
+.contact a {
   font-weight: bold;
 }
 
 .home {
   background-color: var(--secondary-color);
-  color: var(--copy-color);
-  width: 100%;
-  height: 46rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
 }
 
 .home h2 {
@@ -117,71 +254,40 @@ span {
 }
 
 .preview-copy {
-  max-width: 1000px;
   margin: 0 2rem;
-  text-align: left;
-  align-self: center;
-  font-size: 1.5em;
-}
-
-.preview-copy a {
-  text-decoration: underline;
-}
-
-.projects {
-  display: flex;
-  height: 46rem;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-  background-color: var(--tertiary-color);
 }
 
 .button-container {
-  display: none;
-  justify-content: center;
   margin-bottom: 1.5rem;
   gap: 13rem;
 }
 
-.active-menu {
-  display: flex;
-}
-
 button {
-  border: none;
-  background-color: var(--tertiary-color);
-  color: black;
   font-size: 2rem;
   cursor: pointer;
 }
 
 .carousel {
   max-width: 1124px;
-  width: 100%;
-  text-align: center;
 }
 
 .content-container {
   overflow: auto;
-  scroll-behavior: smooth;
   height: 31rem;
+}
+
+.carousel-posts,
+.project-card {
+  box-sizing: border-box;
 }
 
 .carousel-posts {
   display: grid;
   grid-auto-flow: column;
-  box-sizing: border-box;
-  margin: auto;
   gap: 16px;
 }
 
 .project-card {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--tertiary-color);
-  box-sizing: border-box;
   width: 360px;
 }
 
@@ -194,59 +300,27 @@ button {
   margin-bottom: auto;
 }
 
-.project-card h4 {
-  text-align: center;
-}
-
-.image-container {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.info-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
 .info-container p {
   margin: auto 20px;
 }
 
-.link-container {
-  text-align: center;
-  margin-top: auto;
-}
-
 .link-container i:hover {
-  color: white;
   background-color: black;
   border-radius: 2rem;
 }
 
 .link-container a {
   font-size: 2.5em;
-  color: black;
   padding: 6px;
 }
 
 .skills {
   background-color: var(--quaternary-color);
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: white;
-  margin: auto;
-  height: 46rem;
-  justify-content: center;
 }
 
 .skills-container {
-  display: flex;
   flex-wrap: wrap;
   margin: 1rem auto;
-  justify-content: center;
 }
 
 .skills-card {
@@ -262,35 +336,8 @@ button {
   transform: scale(1.1);
 }
 
-.desktop-image {
-  width: 100%;
-}
-
 .about {
-  height: 46rem;
   background-color: var(--quinary-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.about h2,
-.contact h2 {
-  margin: 0;
-}
-
-.about p {
-  max-width: 1000px;
-  font-size: 1.2em;
-  text-align: left;
-  margin: 2rem 2rem;
-}
-
-.about p a {
-  color: black;
-  text-decoration: underline;
-  font-weight: bold;
 }
 
 .about p,
@@ -298,26 +345,18 @@ button {
   margin: 2rem 2rem;
 }
 
-.contact-form,
-.contact {
-  display: flex;
-  flex-direction: column;
-}
-
 .contact {
   background-color: var(--senary-color);
-  height: 46rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+}
+
+.contact p {
+  margin: 0.5rem 2rem;
+  max-width: 26rem;
 }
 
 .form-input {
-  border: none;
   padding: 7px;
   width: 16rem;
-  font-family: var(--body-font);
 }
 
 .input-container {
@@ -325,38 +364,21 @@ button {
 }
 
 .submit-container {
-  text-align: center;
   margin: 1rem;
 }
 
 .submit-cta {
   padding: 6px 45px;
-  font-size: 1.2em;
   box-shadow: 0 3px 6px black;
-}
-
-.submit-cta:hover {
-  background-color: var(--main-color);
-  color: white;
 }
 
 .submit-cta:disabled {
   opacity: 50%;
-  background-color: var(--tertiary-color);
-  color: black;
 }
 
 .error-message {
   text-align: end;
   font-size: 0.9em;
-}
-
-span {
-  align-self: center;
-}
-
-.active {
-  text-decoration: underline;
 }
 
 @media only screen and (max-width: 1156px) {
@@ -389,6 +411,7 @@ span {
 
   ul {
     display: none;
+    border-top: 1px solid var(--tertiary-color);
     position: fixed;
     right: -1rem;
     top: 4.1rem;
