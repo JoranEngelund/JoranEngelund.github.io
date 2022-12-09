@@ -381,13 +381,13 @@ button {
   font-size: 0.9em;
 }
 
+.button-container {
+  display: flex;
+}
+
 @media only screen and (max-width: 1156px) {
   .content-container {
     margin: auto 16px auto 16px;
-  }
-
-  .button-container {
-    display: flex;
   }
 }
 
