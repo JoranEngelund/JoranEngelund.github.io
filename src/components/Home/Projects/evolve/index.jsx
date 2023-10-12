@@ -2,6 +2,7 @@ import * as s from "../styled";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Image from "../../../../assets/evolve.png";
 
 const Evolve = () => {
   const [text, setText] = useState("");
@@ -29,7 +30,7 @@ const Evolve = () => {
     <s.ProjectContainer>
       <s.Heading>Evolve E-Commerce</s.Heading>
       <s.ImageContainer>
-        <s.Image src="/src/assets/evolve.png" />
+        <s.Image src={Image} />
         <s.IconContainer>
           <s.LinkIcon
             target="_blank"

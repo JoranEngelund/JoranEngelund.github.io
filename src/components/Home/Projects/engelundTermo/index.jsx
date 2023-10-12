@@ -2,6 +2,7 @@ import * as s from "../styled";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
+import Image from "../../../../assets/termofrakt.png";
 
 const Termofrakt = () => {
   const [text, setText] = useState("");
@@ -33,7 +34,7 @@ const Termofrakt = () => {
     <s.ProjectContainer>
       <s.Heading>Engelund Termofrakt AS</s.Heading>
       <s.ImageContainer>
-        <s.Image src="/src/assets/termofrakt.png" />
+        <s.Image src={Image} />
         <s.IconContainer>
           <s.LinkIcon target="_blank" href="https://termofrakt.no">
             <s.StyledIcon icon={faGlobe} />

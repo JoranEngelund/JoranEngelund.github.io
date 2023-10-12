@@ -2,6 +2,7 @@ import * as s from "../styled";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Image from "../../../../assets/holidaze-sc.png";
 
 const Holidaze = () => {
   const [text, setText] = useState("");
@@ -29,7 +30,7 @@ const Holidaze = () => {
     <s.ProjectContainer>
       <s.Heading>Holidaze</s.Heading>
       <s.ImageContainer>
-        <s.Image src="/src/assets/holidaze-sc.png" />
+        <s.Image src={Image} />
         <s.IconContainer>
           <s.LinkIcon target="_blank" href="https://holidazes.netlify.app/">
             <s.StyledIcon icon={faGlobe} />

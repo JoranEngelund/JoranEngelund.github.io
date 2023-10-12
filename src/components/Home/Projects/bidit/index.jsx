@@ -2,6 +2,7 @@ import * as s from "../styled";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { useState, useEffect } from "react";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Image from "../../../../assets/bidit.png";
 
 const Bidit = () => {
   const [text, setText] = useState("");
@@ -29,7 +30,7 @@ const Bidit = () => {
     <s.ProjectContainer>
       <s.Heading>BIDIT</s.Heading>
       <s.ImageContainer>
-        <s.Image src="/src/assets/bidit.png" />
+        <s.Image src={Image} />
         <s.IconContainer>
           <s.LinkIcon
             target="_blank"
