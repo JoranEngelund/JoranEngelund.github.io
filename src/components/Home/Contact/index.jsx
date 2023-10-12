@@ -7,7 +7,7 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-
+import CV from "../../../assets/CV_Jøran-Engelund.pdf";
 const Contact = () => {
   const [text, setText] = useState("");
   const originalText = `Are you interested in hiring me or maybe you want to have an unconditional talk about a new website you want? Feel free to reach out to me.`;
@@ -58,7 +58,7 @@ const Contact = () => {
         >
           <s.StyledIcon icon={faInstagram} />
         </s.LinkIcon>
-        <s.LinkIcon target="_blank" href="/src/assets/CV_Jøran-Engelund.pdf">
+        <s.LinkIcon target="_blank" href={CV}>
           CV
         </s.LinkIcon>
       </s.ContactIconsContainer>
