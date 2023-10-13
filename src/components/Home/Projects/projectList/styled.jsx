@@ -43,6 +43,10 @@ export const ProjectContainer = styled.div`
   width: calc(28% - 10px);
   height: 28rem;
   margin-right: 2rem;
+
+  @media (max-width: 940px) {
+    width: 100%;
+  }
 `;
 
 export const ProjectHeading = styled.h2`

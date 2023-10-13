@@ -47,6 +47,12 @@ export const MainContainer = styled.section`
 
 export const ContentContainer = styled.div`
   display: flex;
+
+  @media (max-width: 940px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15rem;
+  }
 `;
 
 export const IntroContainer = styled.div`
@@ -65,4 +71,8 @@ export const Line = styled.hr`
     rgba(9, 9, 121, 1) 54%,
     rgba(255, 0, 0, 1) 92%
   );
+
+  @media (max-width: 940px) {
+    width: 95vw;
+  }
 `;
