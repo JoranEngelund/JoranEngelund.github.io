@@ -30,7 +30,10 @@ const Evolve = () => {
     <s.ProjectContainer>
       <s.Heading>Evolve E-Commerce</s.Heading>
       <s.ImageContainer>
-        <s.Image src={Image} />
+        <s.Image
+          src={Image}
+          alt="Screenshot of the Evolve E-Commerce website"
+        />
         <s.IconContainer>
           <s.LinkIcon
             target="_blank"

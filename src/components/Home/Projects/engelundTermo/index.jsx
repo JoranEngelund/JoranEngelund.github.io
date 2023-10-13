@@ -34,7 +34,10 @@ const Termofrakt = () => {
     <s.ProjectContainer>
       <s.Heading>Engelund Termofrakt AS</s.Heading>
       <s.ImageContainer>
-        <s.Image src={Image} />
+        <s.Image
+          src={Image}
+          alt="Screenshot of the Engelund Termofrakt AS website"
+        />
         <s.IconContainer>
           <s.LinkIcon target="_blank" href="https://termofrakt.no">
             <s.StyledIcon icon={faGlobe} />

@@ -30,7 +30,7 @@ const Bidit = () => {
     <s.ProjectContainer>
       <s.Heading>BIDIT</s.Heading>
       <s.ImageContainer>
-        <s.Image src={Image} />
+        <s.Image src={Image} alt="Screenshot of the BIDIT website" />
         <s.IconContainer>
           <s.LinkIcon
             target="_blank"

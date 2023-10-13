@@ -30,7 +30,7 @@ const Holidaze = () => {
     <s.ProjectContainer>
       <s.Heading>Holidaze</s.Heading>
       <s.ImageContainer>
-        <s.Image src={Image} />
+        <s.Image src={Image} alt="Screenshot of the Holidaze Website" />
         <s.IconContainer>
           <s.LinkIcon target="_blank" href="https://holidazes.netlify.app/">
             <s.StyledIcon icon={faGlobe} />

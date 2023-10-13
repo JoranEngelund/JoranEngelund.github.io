@@ -1,7 +1,6 @@
 import About from "./About";
 import ProjectList from "./Projects/projectList";
 import useShowProjects from "../../hooks/useShowProjects";
-
 import * as s from "./styled";
 import Termofrakt from "./Projects/engelundTermo";
 import Holidaze from "./Projects/holidaze";
