@@ -7,7 +7,6 @@ const Layout = () => {
       <main>
         <Outlet />
       </main>
-      <s.Footer>© 2023 Engelundutvikling.no</s.Footer>
     </>
   );
 };
