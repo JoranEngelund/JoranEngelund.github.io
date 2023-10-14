@@ -71,6 +71,7 @@ export const StyledIcon = styled(FontAwesomeIcon)`
 `;
 
 export const Heading = styled.h1`
+  font-size: 2rem;
   color: hsl(0, 0%, 68%);
   font-weight: bold !important;
   font-family: "Anonymous Pro", monospace !important;
