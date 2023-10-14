@@ -63,7 +63,6 @@ export const IntroContainer = styled.div`
   align-self: center;
   height: 30rem;
   margin-right: 10rem;
-  width: 30rem;
 `;
 
 export const Heading = styled.h1`
@@ -82,7 +81,7 @@ export const Heading = styled.h1`
 export const IntroParagraph = styled.p`
   color: hsl(0, 0%, 68%);
   font-family: "Anonymous Pro", monospace !important;
-  max-width: 38rem;
+  max-width: 32rem;
   animation: ${FadeInAnimation} 0.6s ease-in-out;
   animation: ${IntroAnimation} 0.6s ease-in-out;
 `;

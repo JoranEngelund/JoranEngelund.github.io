@@ -47,6 +47,7 @@ export const MainContainer = styled.section`
 
 export const ContentContainer = styled.div`
   display: flex;
+  justify-content: space-around;
 
   @media (max-width: 940px) {
     flex-direction: column;
@@ -58,7 +59,11 @@ export const ContentContainer = styled.div`
 export const IntroContainer = styled.div`
   max-height: 20rem;
   margin-right: 10rem;
-  width: 30rem;
+  width: 25rem;
+
+  @media (max-width: 400px) {
+    width: 17rem;
+  }
 `;
 
 export const Line = styled.hr`
@@ -73,6 +78,6 @@ export const Line = styled.hr`
   );
 
   @media (max-width: 940px) {
-    width: 95vw;
+    width: 25%;
   }
 `;
