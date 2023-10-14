@@ -46,6 +46,7 @@ export const ProjectContainer = styled.div`
 
   @media (max-width: 940px) {
     width: 100%;
+    margin-top: 15rem;
   }
 `;
 

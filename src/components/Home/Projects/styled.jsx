@@ -71,30 +71,42 @@ export const StyledIcon = styled(FontAwesomeIcon)`
 `;
 
 export const Heading = styled.h1`
+  font-size: 2rem;
   color: hsl(0, 0%, 68%);
   font-weight: bold !important;
   font-family: "Anonymous Pro", monospace !important;
   letter-spacing: 1px !important;
-  overflow: hidden;
 
   white-space: nowrap;
   animation: ${typewriter} 3s steps(44) 1 normal both,
     ${blinkTextCursor} 500ms linear;
+
+  @media (max-width: 940px) {
+    white-space: wrap;
+  }
 `;
 
 export const IntroParagraph = styled.p`
   color: hsl(0, 0%, 68%);
   font-family: "Anonymous Pro", monospace !important;
-  width: 40rem;
+  width: 35rem;
   transition: 0.5s ease-in-out;
   animation: ${FadeInAnimation} 0.6s ease-in-out;
   animation: ${IntroAnimation} 0.6s ease-in-out;
+
+  @media (max-width: 940px) {
+    width: 20rem;
+  }
 `;
 
 export const ImageContainer = styled.div`
   display: flex;
   gap: 3rem;
   margin: 0 1rem 0 0;
+
+  @media (max-width: 940px) {
+    flex-wrap: wrap;
+  }
 `;
 export const Image = styled.img`
   width: 100%;
@@ -108,6 +120,10 @@ export const IconContainer = styled.div`
   flex-direction: column;
   display: flex;
   gap: 2rem;
+
+  @media (max-width: 940px) {
+    flex-direction: row;
+  }
 `;
 
 export const ContactIconsContainer = styled.div`

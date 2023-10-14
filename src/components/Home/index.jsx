@@ -35,7 +35,6 @@ const Home = () => {
           {showEvolve && <Evolve />}
           {showContact && <Contact />}
         </s.IntroContainer>
-        <s.Line />
         <ProjectList
           handleShowBidit={handleShowBidit}
           handleShowEvolve={handleShowEvolve}
