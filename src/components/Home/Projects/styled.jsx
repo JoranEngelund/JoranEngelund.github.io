@@ -45,7 +45,7 @@ const typewriter = keyframes`
     width: 0;
   }
   to {
-    width: 640px;
+    width: 200px;
   }
 }
 `;
@@ -82,7 +82,7 @@ export const Heading = styled.h1`
     ${blinkTextCursor} 500ms linear;
 
   @media (max-width: 940px) {
-    white-space: wrap;
+    font-size: 1.2rem;
   }
 `;
 
@@ -95,7 +95,7 @@ export const IntroParagraph = styled.p`
   animation: ${IntroAnimation} 0.6s ease-in-out;
 
   @media (max-width: 940px) {
-    width: 20rem;
+    width: 100%;
   }
 `;
 
@@ -105,7 +105,8 @@ export const ImageContainer = styled.div`
   margin: 0 1rem 0 0;
 
   @media (max-width: 940px) {
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0;
   }
 `;
 export const Image = styled.img`
@@ -130,6 +131,10 @@ export const ContactIconsContainer = styled.div`
   display: flex;
   gap: 3rem;
   margin: 3rem 1rem;
+
+  @media (max-width: 940px) {
+    flex-wrap: wrap;
+  }
 `;
 
 export const LinkIcon = styled.a`

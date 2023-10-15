@@ -73,6 +73,14 @@ export const ProjectItems = styled.li`
   &:hover {
     opacity: 1;
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.12);
+  }
+
+  @media (max-width: 940px) {
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+      transform: scale(1.1);
+    }
   }
 `;
