@@ -58,7 +58,6 @@ export const ContentContainer = styled.div`
 
 export const IntroContainer = styled.div`
   max-height: 20rem;
-  margin-right: 10rem;
   width: 25rem;
 
   @media (max-width: 400px) {
